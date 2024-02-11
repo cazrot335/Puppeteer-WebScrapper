@@ -22,7 +22,7 @@ const getQuotes = async () => {
     // Get page data
     const quotes = await page.evaluate(() => {
         // Fetch all elements with class "col-md-8"
-        const quoteElements = document.querySelectorAll(".col-md-8");
+        const quoteElements = document.querySelectorAll(".col-md-8 .quote");
 
         // Create an array to store the quotes
         const quotes = [];
